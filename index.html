@@ -28,9 +28,17 @@
     <![endif]-->
 
     <script>
-      document.write('<script src=' +
-      ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-      '.js><\/script>')
+      if ( '__proto__' in {} ) {
+        document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"><\/script>');
+        selfHosted = 'zepto';
+      } else {
+        document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"><\/script>');
+        selfHosted = 'jquery';
+      }
+    </script>
+    <script>
+      window.$ || document.write('<script src="js/vendor/' + selfHosted + '.js"><\/script>');
+      delete selfHosted;
     </script>
 
     <script src="js/foundation/foundation.js"></script>
