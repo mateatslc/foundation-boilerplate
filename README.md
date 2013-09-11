@@ -1,4 +1,4 @@
-Foundation boilerplate (SASS-free, IE9+)
+Foundation boilerplate (Sass-free, IE9+)
 ----------------------------------------
 
 - Zurb Foundation v4.3.1
