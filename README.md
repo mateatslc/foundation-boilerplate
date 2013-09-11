@@ -1,5 +1,5 @@
-Foundation boilerplate (IE9+)
-=============================
+Foundation boilerplate (SASS-free, IE9+)
+========================================
 
 - Zurb Foundation v4.3.1
 - normalize.css v2.1.1
