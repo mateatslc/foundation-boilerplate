@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js">
   <head>
   	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,52 +10,42 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/normalize-2.1.3.css" />
+    <link rel="stylesheet" href="css/foundation-5.0.2.css" />
 
-    <script src="js/vendor/custom.modernizr.js"></script>
+    <script src="js/vendor/modernizr-2.7.1.min.js"></script>
   </head>
 
   <body>
-
-
-
     <!--[if lt IE 9]>
-      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <script>
-      if ( '__proto__' in {} ) {
-        selfHosted = 'zepto';
-      } else {
-        document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"><\/script>');
-        selfHosted = 'jquery';
-      }
-    </script>
-    <script>
-      window.$ || document.write('<script src="js/vendor/' + selfHosted + '.js"><\/script>');
-      delete selfHosted;
-    </script>
+    <!-- site content comes here -->
 
-    <script src="js/foundation/foundation.js"></script>
-    <!-- <script src="js/foundation/foundation.alerts.js"></script> -->
-    <!-- <script src="js/foundation/foundation.clearing.js"></script> -->
-    <!-- <script src="js/foundation/foundation.cookie.js"></script> -->
-    <!-- <script src="js/foundation/foundation.dropdown.js"></script> -->
-    <!-- <script src="js/foundation/foundation.forms.js"></script> -->
-    <!-- <script src="js/foundation/foundation.joyride.js"></script> -->
-    <!-- <script src="js/foundation/foundation.magellan.js"></script> -->
-    <!-- <script src="js/foundation/foundation.orbit.js"></script> -->
-    <!-- <script src="js/foundation/foundation.reveal.js"></script> -->
-    <!-- <script src="js/foundation/foundation.section.js"></script> -->
-    <!-- <script src="js/foundation/foundation.tooltips.js"></script> -->
-    <!-- <script src="js/foundation/foundation.topbar.js"></script> -->
-    <!-- <script src="js/foundation/foundation.interchange.js"></script> -->
-    <!-- <script src="js/foundation/foundation.placeholder.js"></script> -->
-    <!-- <script src="js/foundation/foundation.abide.js"></script> -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.0.3.min.js"><\/script>')</script>
+    <script src="js/vendor/fastclick-0.6.9.js"></script>
 
+    <script src="js/vendor/foundation/foundation.js"></script>
+    <!-- <script src="js/vendor/foundation/foundation.abide.js"></script> -->
+    <!-- <script src="js/vendor/foundation/foundation.accordion.js"></script> -->
+    <!-- <script src="js/vendor/foundation/foundation.alert.js"></script> -->
+    <!-- <script src="js/vendor/foundation/foundation.clearing.js"></script> -->
+    <!-- <script src="js/vendor/foundation/foundation.dropdown.js"></script> -->
+    <!-- <script src="js/vendor/foundation/foundation.interchange.js"></script> -->
+    <!-- <script src="js/vendor/foundation/foundation.joyride.js"></script> -->
+    <!-- <script src="js/vendor/foundation/foundation.magellan.js"></script> -->
+    <!-- <script src="js/vendor/foundation/foundation.offcanvas.js"></script> -->
+    <!-- <script src="js/vendor/foundation/foundation.orbit.js"></script> -->
+    <!-- <script src="js/vendor/foundation/foundation.reveal.js"></script> -->
+    <!-- <script src="js/vendor/foundation/foundation.tab.js"></script> -->
+    <!-- <script src="js/vendor/foundation/foundation.tooltip.js"></script> -->
+    <!-- <script src="js/vendor/foundation/foundation.topbar.js"></script> -->
     <script>
       $(document).foundation();
     </script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
